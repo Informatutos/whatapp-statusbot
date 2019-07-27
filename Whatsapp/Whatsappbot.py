@@ -229,7 +229,7 @@ class WhatsAppBot():
                 else :
                     time.sleep(1.1)
                     print(R+"[*] L'obtention d'accèes à échouer !")
-                    typeStockage()
+                    sys.exit()
             else :
                 print(M+"[*] Vous n'avez pas une  Mémoire de Stockage Externe !")
                 print(B+"[!] Répondez Non à la question !")
@@ -251,7 +251,7 @@ class WhatsAppBot():
                 else :
                     time.sleep(1.1)
                     print(R+"[*] L'Obtention d'accès à échouer ! ")
-                    typeStockage()
+                    sys.exit()
             else :
                 print(M+"[*] Votre mémoire de stockage est définie sur l'externe ! ")
                 print(B+"[!] Répondez Oui à la question !")
@@ -495,7 +495,7 @@ class WhatsAppBot():
                 else :
                     print(R+"[*] L'obtention d'accèes à échouer !")
                     time.sleep(1.1)
-                    typeStockage()
+                    sys.exit()
             else :
                 print(M+"[*] Vous n'avez pas une  Mémoire de Stockage Externe !")
                 print(B+"[!] Répondez Non à la question !")
@@ -517,7 +517,7 @@ class WhatsAppBot():
                 else :
                     print(R+"[*] L'Obtention d'accès à échouer ! ")
                     time.sleep(1.1)
-                    typeStockage()
+                    sys.exit()
             else :
                 print(M+"[*] Votre mémoire de stockage est définie sur l'externe ! ")
                 print(B+"[!] Répondez Oui à la question !")
