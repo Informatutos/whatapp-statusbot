@@ -26,6 +26,7 @@ else:
     sys.exit()
 try:
     from Whatsapp.Whatsappbot import WhatsAppBot as BotWhatsApp
+    sys_r = True
 except ModuleNotFoundError:
     print("[!] Impossible de démarrer le Programme !")
     print("[!] Un module manque !")
@@ -33,16 +34,13 @@ except ModuleNotFoundError:
 
 def main():
     def verify_sys():
-        if sys.platform != "linux2" :
-            sys_r = False
-        else :
-            sys_r = True
-        return sys_r
+        if  sys_r :
+            return sys_r
     get_sys_version = verify_sys()
     if get_sys_version :
         RunApp = BotWhatsApp()
         RunApp.main()
     else:
-        print(R+"[!] Vous ne pouvez pas utilisez WhatsAppBot sur Pc")
+        print(R+"[!] Vous ne pouvez pas utilisez WhatsAppBot ")
 #main function started for Only WhatsappBot
 main()
